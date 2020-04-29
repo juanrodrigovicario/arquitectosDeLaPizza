@@ -16,9 +16,40 @@ h2 {
     color: #fff;
     padding-bottom: 0.2rem;
 }
+h3 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
 p {
     color: #b0b0b0;
+}
+
+.inicio .fixed a,
+.inicio .flotantes a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+.inicio .fixed a .fa-chevron-circle-up {
+    position: fixed;
+    font-size: 2.5rem;
+    bottom: 0%;
+    left: 0%;
+    margin: 1.5rem;
+}
+
+.inicio .flotantes {
+    position: fixed;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    font-size: 1.8rem;
+    color: #cfcfcf;
+    top: 40%;
+    right: 0%;
+    margin: 1rem;
 }
 
 /* ----------  ----------  HEADER ----------  ----------*/
@@ -142,11 +173,107 @@ header .header .menu ul .servicios .subMenu a:hover {
     margin-top: 0.5rem;
 }
 
+/* -----------  -----------  WHATSAPP  -----------  ----------- */
+
+.whatsapp {
+    width: 70%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.whatsapp .textosWhatsapp {
+    margin-left: 8rem;
+}
+
+.whatsapp .textosWhatsapp h3 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.whatsapp .textosWhatsapp h4 {
+    font-size: 2.2rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.whatsapp .textosWhatsapp p {
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.whatsapp .textosWhatsapp a {
+    text-decoration: none;
+    border: 2.5px solid #128c7e;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    font-size: 1.5rem;
+    color: #128c7e;
+    border-radius: 50px;
+}
+
+.whatsapp .textosWhatsapp a:hover {
+    background-color: #128c7e;
+    color: #fff;
+}
+
+/* -----------  -----------  NOSOTROS  -----------  ----------- */
+
+hr {
+    width: 85%;
+    margin: auto;
+    color: #b5b5b5;
+}
+
+.nosotros .textosNosotros {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.nosotros .textosNosotros h3 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nosotros .textosNosotros p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.nosotros .video video {
+    width: 100%;
+}
+
+/* -----------  -----------  NUESTRA CULTURA  -----------  ----------- */
+
+.nuestraCultura {
+    width: 85%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+
+
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
 
 @media screen and (max-width:800px) {
+
+    .inicio .fixed a .fa-chevron-circle-up {
+    margin: 1rem;
+    }
+
+    .inicio .flotantes {
+    margin: 0.7rem;
+    }
+
     header .logo {
         margin: auto;
     }
@@ -171,4 +298,48 @@ header .header .menu ul .servicios .subMenu a:hover {
         justify-content: center;
     }
     
+    .inicio .textosInicio p {
+        font-size: 1rem;
+        color: #fff; 
+        margin-top: 10rem;
+    }
+    
+    .inicio .textosInicio h1 {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 12rem;
+    }
+
+    /* -----------  -----------  WHATSAPP  -----------  ----------- */
+
+    .whatsapp {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .whatsapp .imagenWhatsapp img {
+        display: none;
+    }
+
+    .whatsapp .textosWhatsapp {
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .whatsapp .textosWhatsapp h3 {
+        margin-top: 0rem;
+    }
+
+    .whatsapp .textosWhatsapp h4 {
+        font-size: 1.5rem;
+    }
+    
+    .whatsapp .textosWhatsapp p {
+        font-size: 1.1rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
 }

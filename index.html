@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="inicio">
+    <div class="inicio" id="inicio">
+
+        <div class="fixed">
+            <a href="#inicio"><i class="fas fa-chevron-circle-up"></i></a>
+        </div>
+        <div class="flotantes">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fas fa-phone"></i></a>
+        </div>
+        
         <header>
             <div class="header">
                 <div class="logo">
@@ -33,7 +43,7 @@
                             </ul>
                         </li>
                         <li><a href="#">Clientes</a></li> 
-                        <li><a href="#">Glaeria</a></li>
+                        <li><a href="#">Galeria</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
@@ -47,10 +57,76 @@
                 <h1>Servicio de Catering.<br>Producción integral de Eventos.</h1>
             </div>
             <p class="eslogan">"Consulta ahora por tu evento"</p>
-            <i class="fas fa-chevron-down "></i>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <!--  -----------  -----------   WHATSAPP  ------------   ------------>
+
+    <div class="whatsapp">
+        <div class="textosWhatsapp">
+            <h3>SIMPLIFICATE.</h3>
+            <h4>Envia un mensaje a los Arquitectos de la Pizza.</h4>
+            <p>
+                Hola <b>Arquitectos de la Pizza</b>, quiero realizar un evento para "......." personas,
+                el dia ".......".
+            </p>
+            <a href="">Enviar WhatsApp</a>
+        </div>
+        <div class="imagenWhatsapp">
+            <img src="img/celular.jpg" alt="Imagen ilustrativa de WhatsApp">
+        </div>
+    </div>
+
+    <!--  -----------  -----------   NOSOTROS  ------------   ------------>
+
+    <hr>
+
+    <div class="nosotros">
+        <div class="textosNosotros">
+            <h3>NOSOTROS.</h3>
+            <p>Por que sabemos que tus ancias no aguantan al dia del evento,<br>
+            nosotros te mostramos un poco de nuestro servicio</p>
+        </div>
+    
+        <div class="video">
+            <video autoplay muted loop controls>
+                <source src="img/video_Arq.mp4">
+            </video>
         </div>
 
+        <div class="nuestraCultura">
+            <div class="textosNuestrCultura">
+                <h3>Nuestra Cultura de trabajo</h3>
+                <p>
+                Ofrecemos un servicio distinguido desde el año 2015, 
+                brindando toda nuestra experiencia en la organización de más de 500 eventos.
+                Contamos con personal capacitado y excelente predisposición, con el fin de lograr
+                 que tu evento sea único e irrepetible, creando experiencias inolvidables.
+                </p>
+                <ul>
+                    <li>Bodas.</li>
+                    <li>Fiestas de 15 años.</li>
+                    <li>Empresariales.</li>
+                    <li>Egresos.</li>
+                    <li>Bautismos.</li>
+                    <li>Comuniones.</li>
+                    <li>Cumpleaños</li>
+                    <li>Despedidas</li>
+                    <li>Eventos Privados, etc.</li>
+                </ul>
+                <p class="TextoDecorativo">
+                    Nos diferenciamos por nuestra atención, en donde la calidez y compromiso, 
+                    son entre otros componentes, claves, para brindar el mejor servicio.
+                </p>
+            </div>
+            <div class="imagenNuestrCultura">
+                <img loading="lazy" src="img/nosotros.png" alt="Imagen ilustrativa, Arquitectos de la Pizza">
+            </div>
+        </div>
     </div>
+
+
 <script src="https://kit.fontawesome.com/5c58b8374d.js" crossorigin="anonymous"></script>
 </body>
 </html>

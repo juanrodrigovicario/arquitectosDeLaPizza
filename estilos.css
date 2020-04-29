@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "minion-pro", serif;
+    font-size: 16px;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.7rem;
+    font-style: bold;
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+
+p {
+    color: #b0b0b0;
+}
+
+/* ----------  ----------  HEADER ----------  ----------*/
+
+.inicio {
+    background-image: url('img/inicio.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+header .logo {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header .logo .imagen img {
+    width: 30px;
+    margin: 0.5rem;
+}
+
+header .logo .textosLogo {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+header .logo .textosLogo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+header .header .menu {
+    display: grid;
+    align-content: center;
+}
+
+header .header .menu ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+header .header .menu ul .servicios:hover .subMenu{
+    visibility: visible;
+}
+
+header .header .menu ul a {
+    display: grid;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header .header .menu ul a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #000;
+}
+
+header .header .menu ul .servicios .subMenu {
+    position:absolute;
+    visibility: hidden;
+    display: grid;
+    grid-auto-flow: row;
+    background-color: #000;
+}
+
+header .header .menu ul .servicios .subMenu a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #000;
+}
+
+.inicio .textosInicio{
+    width: 85%;
+    margin: auto;
+}
+
+.inicio .textosInicio .eslogan {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.inicio .textosInicio p {
+    font-size: 1.5rem;
+    color: #fff; 
+    margin-top: 10rem;
+}
+
+.inicio .textosInicio h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+
+.inicio .textosInicio .fa-chevron-down {
+    color: #fff;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0.5rem;
+}
+
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+
+@media screen and (max-width:800px) {
+    header .logo {
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header .logo .imagen img {
+        width: 25px;
+    }
+    
+    header .logo .textosLogo a {
+        font-size: .8rem;
+    }
+
+    header .header .menu ul a {
+        font-size: 0.8rem;
+    }
+
+    header .header .menu ul {
+        justify-content: center;
+    }
+    
+}

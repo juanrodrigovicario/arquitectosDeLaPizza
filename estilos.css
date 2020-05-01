@@ -9,6 +9,12 @@ body {
     font-size: 16px;
 }
 
+hr {
+    width: 85%;
+    margin: auto;
+    color: #b5b5b5;
+}
+
 h2 {
     display: inline;
     font-size: 1.7rem;
@@ -221,11 +227,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 /* -----------  -----------  NOSOTROS  -----------  ----------- */
 
-hr {
-    width: 85%;
-    margin: auto;
-    color: #b5b5b5;
-}
+
 
 .nosotros .textosNosotros {
     width: 85%;
@@ -250,12 +252,150 @@ hr {
 
 /* -----------  -----------  NUESTRA CULTURA  -----------  ----------- */
 
-.nuestraCultura {
+.nosotros .nuestraCultura {
     width: 85%;
     margin: 3rem auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
+}
+
+.nosotros .nuestraCultura .textosNuestraCultura {
+    padding: 0 0 0 7rem;
+}
+
+.nosotros .nuestraCultura .textosNuestraCultura h3 {
+    margin-bottom: 2rem;
+}
+
+.nosotros .nuestraCultura .textosNuestraCultura .textoDecorativo {
+    font-size: 1.3rem;
+    padding: 1rem;
+    color: #e35b52;
+    font-weight: bold;
+}
+
+.nosotros .nuestraCultura  .imagenNuestrCultura img {
+    width: 100%;
+}
+
+/* -----------  -----------  TIPO DE EVENTOS  -----------  ----------- */
+.tipoDeEventos {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.tipoDeEventos h3 {
+    text-align: center;
+    margin: 3rem auto 2rem;
+}
+
+.tipoDeEventos .tarjetasChicas {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+   
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas:hover {
+    transform: scale(1.03);
+    transition-duration: 0.7s;
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas img {
+    width: 100%; 
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas {
+    background-color: #ededed;
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .textos {
+    padding: 0.5rem 0rem 1rem 0.5rem;
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas p {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .cursiva {
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    color: #000;
+	font-size: 1.5rem;
+}
+
+/* -----------  -----------  SERVICIOS  -----------  ----------- */
+
+.servicio {
+    width: 85%;
+    margin: 3rem auto;
+}
+
+.servicio .textosServicios {
+    text-align: center;
+    margin: 2rem;
+}
+
+.servicio .tarjetasGrandes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas img {
+    width: 100%;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos {
+    margin: 1rem;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .cursiva {
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .textoTarjetasGrandes {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas  .textosServiciosDos .texterio {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .verMas {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    background-color: #000;
+    border-radius: 50px;
+    margin: 1.5rem 5rem;
+}
+
+.servicio .tarjetasGrandes .serviciosTarjetas:hover {
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    transition-duration: 0.7s;
+}
+
+/* -----------  -----------  CLIENTES  -----------  ----------- */
+
+.clientes {
+    width: 85%;
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -265,6 +405,10 @@ hr {
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
 
 @media screen and (max-width:800px) {
+
+    h3 {
+        font-size: 2rem;
+    }
 
     .inicio .fixed a .fa-chevron-circle-up {
     margin: 1rem;
@@ -330,6 +474,7 @@ hr {
     }
 
     .whatsapp .textosWhatsapp h3 {
+        font-size: 2rem;
         margin-top: 0rem;
     }
 
@@ -342,4 +487,52 @@ hr {
         margin-top: 3rem;
         margin-bottom: 4rem;
     }
+
+    /* -----------  -----------  NUESTRA CULTURA  -----------  ----------- */
+
+    .nosotros .textosNosotros p {
+        font-size: 0.8rem;
+    }
+
+    .nosotros .nuestraCultura .textosNuestraCultura h3,
+    .nosotros .nuestraCultura .textosNuestraCultura ul,
+    .nosotros .nuestraCultura .textosNuestraCultura .textoDecorativo {
+        display: none;
+    }
+
+    .nosotros .nuestraCultura {
+        width: 100%;
+    }
+
+    .nosotros .nuestraCultura .textosNuestraCultura {
+    padding: 1rem 0.5rem 0 0.5rem;
+    }
+    
+    /* -----------  -----------  TIPO DE EVENTOS  -----------  ----------- */
+
+    .tipoDeEventos {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas p {
+        font-size: 1rem;
+    }
+    
+    .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .cursiva {
+        font-size: 1rem;
+    }
+
+    .tipoDeEventos .tarjetasChicas {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1rem;
+    }
+
+    /* -----------  -----------  SERVICIOS  -----------  ----------- */
+
+.servicio .textosServicios p {
+    font-size: 0.8rem;
+}
 }

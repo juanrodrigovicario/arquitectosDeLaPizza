@@ -422,7 +422,48 @@ text-align: center;
     margin: auto;
 }
 
-/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+/* -----------  -----------  COMENTARIOS  -----------  ----------- */
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 235, 188);
+}
+.comentarios .titulo-comentarios{
+    text-align: center;
+}
+.comentarios .textoComentarios{
+    width: 70%;
+    margin: 20px auto;
+}
+.comentarios .contenedorComentarios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+.comentarios .contenedorComentarios .botonAtras, 
+.comentarios .contenedorComentarios .botonAdelante{
+    padding: 20px;
+    font-size: 42px;
+    cursor: pointer;
+} 
+.comentarios .comentario .textoDelComentario{
+    font-size: 28px;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+}
+.comentarios .contenedorComentarios .comentario .autorDelComentario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* -----------  -----------  FOOTER  -----------  ----------- */
 
 footer {
     background-color: #292929;

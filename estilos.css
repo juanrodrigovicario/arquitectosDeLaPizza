@@ -7,6 +7,7 @@
 body {
     font-family: "minion-pro", serif;
     font-size: 16px;
+    user-select: none;
 }
 
 hr {
@@ -227,8 +228,6 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 /* -----------  -----------  NOSOTROS  -----------  ----------- */
 
-
-
 .nosotros .textosNosotros {
     width: 85%;
     margin: auto;
@@ -243,7 +242,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 .nosotros .textosNosotros p {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .nosotros .video video {
@@ -265,12 +264,12 @@ header .header .menu ul .servicios .subMenu a:hover {
 }
 
 .nosotros .nuestraCultura .textosNuestraCultura h3 {
+    margin-top: 0rem;
     margin-bottom: 2rem;
 }
 
 .nosotros .nuestraCultura .textosNuestraCultura .textoDecorativo {
     font-size: 1.3rem;
-    padding: 1rem;
     color: #e35b52;
     font-weight: bold;
 }
@@ -287,7 +286,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 .tipoDeEventos h3 {
     text-align: center;
-    margin: 3rem auto 2rem;
+    margin: 6rem auto 2rem;
 }
 
 .tipoDeEventos .tarjetasChicas {
@@ -304,10 +303,12 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 .tipoDeEventos .tarjetasChicas .tarjetitas img {
     width: 100%; 
+    border-radius: 1rem;
 }
 
 .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas {
     background-color: #ededed;
+    border-radius: 1rem;
 }
 
 .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .textos {
@@ -347,6 +348,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 
 .servicio .tarjetasGrandes .serviciosTarjetas img {
     width: 100%;
+    border-radius: 1.5rem;
 }
 
 .servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos {
@@ -393,12 +395,52 @@ header .header .menu ul .servicios .subMenu a:hover {
 /* -----------  -----------  CLIENTES  -----------  ----------- */
 
 .clientes {
-    width: 85%;
-    margin: auto;
-    text-align: center;
+width: 100%;
+margin: auto;
+text-align: center;
 }
 
+.clientes .textosClientes h3 {
+    padding-top: 1rem;
+}
 
+.clientes .textosClientes p {
+    width: 55%;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+.clientes .imagenClientes img {
+    width: 100%;
+}
+
+.clientes .imagenClientes {
+    width: 85%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px, 1fr));
+    margin: auto;
+}
+
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+
+footer {
+    background-color: #292929;
+    width: 100%;
+}
+
+footer .footer .logo {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+
+footer .footer .logo .imagen img {
+    width: 100%
+} 
+
+footer .footer .logo .textosLogo {
+    align-content: center;
+}
 
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
 /* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
@@ -424,6 +466,10 @@ header .header .menu ul .servicios .subMenu a:hover {
 
     h2 {
         font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
     }
 
     header .logo .imagen img {
@@ -527,12 +573,41 @@ header .header .menu ul .servicios .subMenu a:hover {
     .tipoDeEventos .tarjetasChicas {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 1rem;
+        grid-gap: 0.5rem;
+    }
+
+    .clientes .textosClientes p {
+        width: 100%;
     }
 
     /* -----------  -----------  SERVICIOS  -----------  ----------- */
 
-.servicio .textosServicios p {
-    font-size: 0.8rem;
-}
+    .servicio .textosServicios p {
+        font-size: 0.8rem;
+    }
+
+    .servicio .tarjetasGrandes .serviciosTarjetas {
+        background-color: #ededed;
+        border-radius: 1rem;
+    }
+
+    /* -----------  -----------  CLIENTES  -----------  ----------- */
+
+    .container .carousel {
+        height: 200px;
+        margin-top: 0rem;
+     }
+
+     .carousel .carousel-item {
+        width: 180px;
+    }
+
+    /* -----------  -----------  COMENTARIOS     -----------  ----------- */
+
+    .comentarios .ubicacion iframe {
+        width: 100%;
+        height: 40vw;
+    }
+
+     
 }

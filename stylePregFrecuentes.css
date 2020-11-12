@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "minion-pro", serif;
+    font-size: 16px;
+    user-select: none;
+}
+
+hr {
+    width: 85%;
+    margin: auto;
+    color: #b5b5b5;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.7rem;
+    font-style: bold;
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+h3 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: #b0b0b0;
+}
+
+.inicio .fixed a,
+.inicio .flotantes a {
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+.inicio .fixed a .fa-chevron-circle-up {
+    position: fixed;
+    font-size: 2.5rem;
+    bottom: 0%;
+    left: 0%;
+    margin: 1.5rem;
+}
+
+.inicio .flotantes {
+    position: fixed;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 1rem;
+    font-size: 1.8rem;
+    color: #cfcfcf;
+    top: 40%;
+    right: 0%;
+    margin: 1rem;
+}
+
+/* ----------  ----------  HEADER ----------  ----------*/
+
+.inicio {
+    background-image: url('img/inicio.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.header {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+header .logo {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+header .logo .imagen img {
+    width: 30px;
+    margin: 0.5rem;
+}
+
+header .logo .textosLogo {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+header .logo .textosLogo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+header .header .menu {
+    display: grid;
+    align-content: center;
+}
+
+header .header .menu ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+header .header .menu ul .servicios:hover .subMenu{
+    visibility: visible;
+}
+
+header .header .menu ul a {
+    display: grid;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+header .header .menu ul a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #000;
+}
+
+header .header .menu ul .servicios .subMenu {
+    position:absolute;
+    visibility: hidden;
+    display: grid;
+    grid-auto-flow: row;
+    background-color: #000;
+}
+
+header .header .menu ul .servicios .subMenu a:hover {
+    text-decoration: underline;
+    background-color: #fff;
+    color: #000;
+}
+
+.inicio .textosInicio{
+    width: 85%;
+    margin: auto;
+}
+
+.inicio .textosInicio .eslogan {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.inicio .textosInicio p {
+    font-size: 1.5rem;
+    color: #fff; 
+    margin-top: 5rem;
+}
+
+.inicio .textosInicio h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+
+.inicio .textosInicio .fa-chevron-down {
+    color: #fff;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 0.5rem;
+}
+
+/* -----------  -----------  PREGUNTAS FRECUENTES  -----------  ----------- */
+
+.contenedor-preguntas-frecuentes{
+    width: 80%;
+    margin:auto;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes {
+    margin: 25px;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .titulo-desplegable{
+    display: flex;
+    align-items: center;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .titulo-desplegable .fa-angle-right{
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .titulo-desplegable .fa-angle-down{
+    display: none;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .titulo-desplegable h6{
+    margin: 0px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: rgb(139, 139, 139);
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .titulo-desplegable h6:hover{
+    color: black;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .info-desplegable{
+    width: 85%;
+    margin: 15px auto;
+    display: none;
+}
+.contenedor-preguntas-frecuentes .preguntas-frecuentes .info-desplegable .text-black{
+    color: black;
+    font-size: 17px;
+    /* font-weight: 600; */
+}
+/* .contenedor-preguntas-frecuentes .preguntas-frecuentes .info-desplegable .ul-text .li-text{
+    color: rgb(170, 170, 170);
+} */
+/* -----------  -----------  FOOTER  -----------  ----------- */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+}
+.footer .contenedor-info-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .contenedor-info-footer .logo{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.footer .contenedor-info-footer .logo .img{
+    width: 45px;
+    margin: 10px;
+}
+.footer .contenedor-info-footer .logo .textos-logo .slogan{
+    color: #fff;
+    font-size: 16.8px;
+}
+.footer .contenedor-info-footer .anchor{
+    color: #fff;
+    cursor: pointer;
+    margin: auto;
+}
+.footer .contenedor-info-footer .contactanos .iconos-footer{
+    color: rgb(119, 119, 119);
+    font-size: 25px;
+    margin: 40px;
+    
+}
+.footer .footerDelFooter{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+}
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+/* -----------  -----------  MEDIA QUERIES  -----------  ----------- */
+
+@media screen and (max-width:800px) {
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .inicio .fixed a .fa-chevron-circle-up {
+    margin: 1rem;
+    }
+
+    .inicio .flotantes {
+    margin: 0.7rem;
+    }
+
+    header .logo {
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    header .logo .imagen img {
+        width: 25px;
+    }
+    
+    header .logo .textosLogo a {
+        font-size: .8rem;
+    }
+
+    header .header .menu ul a {
+        font-size: 0.8rem;
+    }
+
+    header .header .menu ul {
+        justify-content: center;
+    }
+    
+    .inicio .textosInicio p {
+        font-size: 1rem;
+        color: #fff; 
+        margin-top: 10rem;
+    }
+    
+    .inicio .textosInicio h1 {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 12rem;
+    }
+
+    /* -----------  -----------  WHATSAPP  -----------  ----------- */
+
+    .whatsapp {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .whatsapp .imagenWhatsapp img {
+        display: none;
+    }
+
+    .whatsapp .textosWhatsapp {
+        margin-left: 0rem;
+        text-align: center;
+    }
+
+    .whatsapp .textosWhatsapp h3 {
+        font-size: 2rem;
+        margin-top: 0rem;
+    }
+
+    .whatsapp .textosWhatsapp h4 {
+        font-size: 1.5rem;
+    }
+    
+    .whatsapp .textosWhatsapp p {
+        font-size: 1.1rem;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    /* -----------  -----------  NUESTRA CULTURA  -----------  ----------- */
+
+    .nosotros .textosNosotros p {
+        font-size: 0.8rem;
+    }
+
+    .nosotros .nuestraCultura .textosNuestraCultura h3,
+    .nosotros .nuestraCultura .textosNuestraCultura ul,
+    .nosotros .nuestraCultura .textosNuestraCultura .textoDecorativo {
+        display: none;
+    }
+
+    .nosotros .nuestraCultura {
+        width: 100%;
+    }
+
+    .nosotros .nuestraCultura .textosNuestraCultura {
+    padding: 1rem 0.5rem 0 0.5rem;
+    }
+    
+    /* -----------  -----------  TIPO DE EVENTOS  -----------  ----------- */
+
+    .tipoDeEventos {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas p {
+        font-size: 1rem;
+    }
+    
+    .tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .cursiva {
+        font-size: 1rem;
+    }
+
+    .tipoDeEventos .tarjetasChicas {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 0.5rem;
+    }
+
+    .clientes .textosClientes p {
+        width: 100%;
+    }
+
+    /* -----------  -----------  SERVICIOS  -----------  ----------- */
+
+    .servicio .textosServicios p {
+        font-size: 0.8rem;
+    }
+
+    .servicio .tarjetasGrandes .serviciosTarjetas {
+        background-color: #ededed;
+        border-radius: 1rem;
+    }
+
+    /* -----------  -----------  CLIENTES  -----------  ----------- */
+
+    .container .carousel {
+        height: 200px;
+        margin-top: 0rem;
+     }
+
+     .carousel .carousel-item {
+        width: 180px;
+    }
+
+    /* -----------  -----------  COMENTARIOS     -----------  ----------- */
+
+    .comentarios .ubicacion iframe {
+        width: 100%;
+        height: 40vw;
+    }
+
+     
+}

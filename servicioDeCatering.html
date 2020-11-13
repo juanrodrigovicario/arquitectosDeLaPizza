@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arquitectos de la Pizza -CETERING</title>
+    <title>Arq. de la Pizza - CETERING</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styleServicioCaterign.css">
@@ -35,17 +36,17 @@
                 <div class="menu">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
                         <li class="servicios"><a href="#">Servicios▼</a>
                             <ul class="subMenu">
                                 <li><a id="button-servicio-catering" href="servicioDeCatering.html">Servicio de Catering</a></li>
                                 <li><a href="#">Produc. Integral Eventos</a></li>
-                                <li><a href="#">Productos Congelados</a></li>
-                                <li><a href="#">Preguntas Frecuentes</a></li>
+                                <li><a href="productosCongelados.html">Productos Congelados</a></li>
+                                <li><a href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
                             </ul>
                         </li>
-                        <li><a href="#clientes">Clientes</a></li> 
-                        <li><a href="#">Galeria</a></li>
+                        <li><a href="index.html#clientes">Clientes</a></li> 
+                        <li><a href="galeriaFotos.html">Galeria</a></li>
                         <li><a href="#contactos">Contacto</a></li>
                     </ul>
                 </div>
@@ -231,7 +232,7 @@
                     <p class="textoTarjetasChica">Recepcion</p>
                     <p class="texterio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, saepe.
                     </p>
-                    <a class="verMas" href="#">Ver Mas</a> 
+                    <a class="verMas" href="#recepcion">Ver Mas</a> 
                 </div>
             </div>
             <div class="serviciosTarjetas">
@@ -241,7 +242,7 @@
                     <p class="textoTarjetasChica">Entradas</p>
                     <p class="texterio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, saepe.
                     </p>
-                    <a class="verMas" href="#">Ver Mas</a> 
+                    <a class="verMas" href="#entradas">Ver Mas</a> 
                 </div>
             </div>
             <div class="serviciosTarjetas">
@@ -251,7 +252,7 @@
                     <p class="textoTarjetasChica">Platos Principales</p>
                     <p class="texterio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, saepe.
                     </p>
-                    <a class="verMas" href="#">Ver Mas</a> 
+                    <a class="verMas" href="#platos-principales">Ver Mas</a> 
                 </div>
             </div>
             <div class="serviciosTarjetas">
@@ -261,7 +262,7 @@
                     <p class="textoTarjetasChica">Bebidas</p>
                     <p class="texterio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, saepe.
                     </p>
-                    <a class="verMas" href="#">Ver Mas</a> 
+                    <a class="verMas" href="#bebidas">Ver Mas</a> 
                 </div>
             </div>
             <div class="serviciosTarjetas">
@@ -271,7 +272,7 @@
                     <p class="textoTarjetasChica">Artesanales</p>
                     <p class="texterio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, saepe.
                     </p>
-                    <a class="verMas" href="#">Ver Mas</a> 
+                    <a class="verMas" href="#cervezas-artesanales">Ver Mas</a> 
                 </div>
             </div>
             <!-- <div class="serviciosTarjetas">
@@ -306,7 +307,7 @@
     <!--  -----------  -----------  LA RECEPCION ------------   ------------>   
     
     <hr>
-    <div class="la-recepcion">
+    <div class="la-recepcion" id="recepcion">
         <div class="titulo-la-recepcion">
             <h4><span class="span-la">La </span><span class="span-h4"> RECEPCION.</span>
                 <span class="span-entre-parentesis">(incluidas sin cargo)</span></h4>
@@ -330,7 +331,7 @@
     <!--  -----------  ----------- SELECCION DE ENTRADAS ------------   ------------>   
     
     <hr>
-    <div class="la-recepcion">
+    <div class="la-recepcion" id="entradas">
         <div class="titulo-la-recepcion">
             <h4><span class="span-la">Seleccion de </span><span class="span-h4"> ENTRADAS.</span>
                 <span class="span-entre-parentesis">(opcional)</span></h4>
@@ -361,7 +362,7 @@
     <!--  -----------  ----------- COMIDA Y PRINCIPALES ------------   ------------>   
     
     <hr>
-    <div class="la-recepcion">
+    <div class="la-recepcion" id="platos-principales">
         <div class="titulo-la-recepcion">
             <h4><span class="span-la">Comida y</span><span class="span-h4"> PRINCIPALES.</span>
                 <span class="span-entre-parentesis">(opcional)</span></h4>
@@ -485,7 +486,7 @@
 
 <!--  -----------  -----------   SERVICIO DE BEBIDAS ------------   ------------>
 
-    <div class="la-recepcion">
+    <div class="la-recepcion" id="bebidas">
         <div class="titulo-la-recepcion">
             <h4><span class="span-la">Servicio de </span><span class="span-h4"> BEBDIAS.</span>
                 <span class="span-entre-parentesis">(opcional)</span></h4>
@@ -510,7 +511,7 @@
     <!--  -----------  -----------   CERVEZA ARTESANAL TIRADA ------------   ------------>
 
     <hr>
-    <div class="la-recepcion">
+    <div class="la-recepcion" id="cervezas-artesanales">
         <div class="titulo-la-recepcion">
             <h4><span class="span-la">Cerveza</span><span class="span-h4"> ARTESANAL</span>
                 <span class="span-entre-parentesis">(opcional)</span></h4>

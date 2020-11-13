@@ -148,7 +148,6 @@ header .header .menu ul .servicios .subMenu a:hover {
     /* text-decoration: underline; */
     background-color: #fff;
     color: #000;
-    text-decoration: none;
 }
 
 .inicio .textosInicio{
@@ -166,7 +165,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 .inicio .textosInicio p {
     font-size: 1.5rem;
     color: #fff; 
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .inicio .textosInicio h1 {
@@ -185,288 +184,92 @@ header .header .menu ul .servicios .subMenu a:hover {
     margin-top: 0.5rem;
 }
 
-/* -----------  -----------  WHATSAPP  -----------  ----------- */
+/* -----------  -----------  GALERIA DE FOTOS  -----------  ----------- */
 
-.whatsapp {
-    width: 70%;
-    margin: 3rem auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-}
-
-.whatsapp .textosWhatsapp {
-    margin-left: 8rem;
-}
-
-.whatsapp .textosWhatsapp h3 {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.whatsapp .textosWhatsapp h4 {
-    font-size: 2.2rem;
-    font-weight: lighter;
-    margin-bottom: 1rem;
-}
-
-.whatsapp .textosWhatsapp p {
-    font-size: 1.3rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-}
-
-.whatsapp .textosWhatsapp a {
-    text-decoration: none;
-    border: 2.5px solid #128c7e;
-    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-    font-size: 1.5rem;
-    color: #128c7e;
-    border-radius: 50px;
-}
-
-.whatsapp .textosWhatsapp a:hover {
-    background-color: #128c7e;
-    color: #fff;
-}
-
-/* -----------  -----------  NOSOTROS  -----------  ----------- */
-
-.nosotros .textosNosotros {
-    width: 85%;
-    margin: auto;
-    text-align: center;
-}
-
-.nosotros .textosNosotros h3 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.nosotros .textosNosotros p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.nosotros .video video {
-    width: 100%;
-}
-
-/* -----------  -----------  NUESTRA CULTURA  -----------  ----------- */
-
-.nosotros .nuestraCultura {
-    width: 85%;
-    margin: 3rem auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-}
-
-.nosotros .nuestraCultura .textosNuestraCultura {
-    padding: 0 0 0 7rem;
-}
-
-.nosotros .nuestraCultura .textosNuestraCultura h3 {
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-}
-
-.nosotros .nuestraCultura .textosNuestraCultura .textoDecorativo {
-    font-size: 1.3rem;
-    color: #e35b52;
-    font-weight: bold;
-}
-
-.nosotros .nuestraCultura  .imagenNuestrCultura img {
-    width: 100%;
-}
-
-/* -----------  -----------  TIPO DE EVENTOS  -----------  ----------- */
-.tipoDeEventos {
-    width: 80%;
-    margin: 3rem auto;
-}
-
-.tipoDeEventos h3 {
-    text-align: center;
-    margin: 6rem auto 2rem;
-}
-
-.tipoDeEventos .tarjetasChicas {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 2rem;
-   
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas:hover {
-    transform: scale(1.03);
-    transition-duration: 0.7s;
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas img {
-    width: 100%; 
-    border-radius: 1rem;
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas {
-    background-color: #ededed;
-    border-radius: 1rem;
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .textos {
-    padding: 0.5rem 0rem 1rem 0.5rem;
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas p {
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.tipoDeEventos .tarjetasChicas .tarjetitas .fondoTarjetitas .cursiva {
-    font-family: 'Great Vibes', cursive;
-    font-weight: lighter;
-    color: #000;
-	font-size: 1.5rem;
-}
-
-/* -----------  -----------  SERVICIOS  -----------  ----------- */
-
-.servicio {
-    width: 85%;
-    margin: 3rem auto;
-}
-
-.servicio .textosServicios {
-    text-align: center;
-    margin: 2rem;
-}
-
-.servicio .tarjetasGrandes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    grid-gap: 2rem;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas img {
-    width: 100%;
-    border-radius: 1.5rem;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos {
-    margin: 1rem;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .cursiva {
-    font-family: 'Great Vibes', cursive;
-    font-weight: lighter;
-    color: #000;
-    font-size: 1.5rem;
-    text-align: left;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .textoTarjetasGrandes {
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: left;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas  .textosServiciosDos .texterio {
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .verMas {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    padding: 0.4rem 1.5rem 0.4rem 1.5rem;
-    background-color: #000;
-    border-radius: 50px;
-    margin: 1.5rem 5rem;
-}
-
-.servicio .tarjetasGrandes .serviciosTarjetas:hover {
-    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.3);
-    transform: scale(1.03);
-    transition-duration: 0.7s;
-}
-
-/* -----------  -----------  CLIENTES  -----------  ----------- */
-
-.clientes {
-width: 100%;
-margin: auto;
-text-align: center;
-}
-
-.clientes .textosClientes h3 {
-    padding-top: 1rem;
-}
-
-.clientes .textosClientes p {
-    width: 55%;
-    padding-top: 1rem;
-    margin: auto;
-}
-
-.clientes .imagenClientes img {
-    width: 100%;
-}
-
-.clientes .imagenClientes {
-    width: 85%;
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px, 1fr));
-    margin: auto;
-}
-
-/* -----------  -----------  COMENTARIOS  -----------  ----------- */
-
-.comentarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(238, 235, 188);
-}
-.comentarios .titulo-comentarios{
-    text-align: center;
-}
-.comentarios .textoComentarios{
-    width: 70%;
-    margin: 20px auto;
-}
-.comentarios .contenedorComentarios{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px;
-}
-.comentarios .contenedorComentarios .botonAtras, 
-.comentarios .contenedorComentarios .botonAdelante{
-    padding: 20px;
-    font-size: 42px;
-    cursor: pointer;
-} 
-.comentarios .comentario .textoDelComentario{
-    font-size: 28px;
+.la-recepcion{
+    margin:60px auto;
     width: 75%;
-    text-align: center;
-    margin: auto;
 }
-.comentarios .contenedorComentarios .comentario .autorDelComentario{
+.la-recepcion .titulo-la-recepcion{
+    text-align: center;
+}
+
+.la-recepcion p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.la-recepcion .titulo-la-recepcion .span-la{
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    color: #000;
+    font-size: 3.5rem;
+}
+.la-recepcion .titulo-la-recepcion .span-h4{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.la-recepcion .fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-top: 50px;
+    /* grid-template-areas: ; */
+}
+.la-recepcion .fotos .img-efecto:hover{
+    transform: scale(1.5);
+    border-radius: 20px;
+    transition: 0.7s;
+}
+
+/* .la-recepcion .titulo-la-recepcion .span-entre-parentesis{
+    font-size: 1.2rem;
+    color: rgb(160, 160, 160);
+}
+.la-recepcion .contenedor-informacion{
+    display: flex;
+    margin:20px;
+
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
+    border-style: dotted;
+    border-width: 2.5px 0px;
+    border-color: #b0b0b0;
+    margin: 0px 30px;
 }
-
+.la-recepcion .contenedor-informacion .textos-la-recepcion .items-en-dos-columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion .items{
+    margin:auto;
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion .tipo-de-entrada{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: black;
+    margin: 30px 0 0 0;
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion .linte-punteada{
+    border-style: dotted;
+    border-width: 0 0 2px 0;
+    margin: 5px;
+    padding: 10px;
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion .acotacion-al-margen{
+    font-size: 1.4rem;
+    color: rgb(180, 88, 88);
+    width: 90%;
+    margin: auto;
+}
+.la-recepcion .contenedor-informacion .textos-la-recepcion .span-items{
+    color: #000;
+    font-weight: 600;
+} */
 
 /* -----------  -----------  FOOTER  -----------  ----------- */
 

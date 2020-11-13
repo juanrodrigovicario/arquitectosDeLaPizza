@@ -130,6 +130,8 @@ header .header .menu ul a:hover {
     text-decoration: underline;
     background-color: #fff;
     color: #000;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 header .header .menu ul .servicios .subMenu {
@@ -138,10 +140,12 @@ header .header .menu ul .servicios .subMenu {
     display: grid;
     grid-auto-flow: row;
     background-color: #000;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 header .header .menu ul .servicios .subMenu a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
     background-color: #fff;
     color: #000;
 }

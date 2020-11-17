@@ -274,7 +274,9 @@ header .header .menu ul .servicios .subMenu a:hover {
     color: rgb(119, 119, 119);
     font-size: 25px;
     margin: 40px;
-    
+}
+.footer .contenedor-info-footer .contactanos .iconos-footer:hover{
+    color: #fff;
 }
 .footer .footerDelFooter{
     width: 100%;

@@ -393,7 +393,6 @@ header .header .menu ul .servicios .subMenu a:hover {
 .servicio .tarjetasGrandes .serviciosTarjetas .textosServiciosDos .verMas:hover{
     background-color: black;
 }
-
 .servicio .tarjetasGrandes .serviciosTarjetas:hover {
     box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.3);
     transform: scale(1.03);

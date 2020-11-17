@@ -471,6 +471,7 @@ header .header .menu ul .servicios .subMenu a:hover {
 .la-recepcion{
     margin:60px auto;
     width: 80%;
+    max-width: 1000px;
 }
 .la-recepcion .titulo-la-recepcion{
     text-align: center;
